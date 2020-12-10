@@ -3,7 +3,7 @@
 This repository contains the gender-annotated dataset based on [TED](https://ted.com) which was used for gender classification of translated data in Mirkin et al., 2015 and Rabinovich et al., 2017.
 As the above papers link to a web page that is no longer available, the dataset is posted here, with consent. If you use this data please cite this paper:
 
-Mirkin, Shachar, Nowson, Scott, Brun, Caroline, & Perez, Julien. (2015) Motivating Personality-aware Machine Translation. In the Proceedings of the Conference on Empirical Methods in Natural Language (EMNLP) 2015, Lisbon, Portugal. [PDF](http://aclweb.org/anthology/D/D15/D15-1130.pdf) [BIB](http://www.emnlp2015.org/proceedings/EMNLP/bib/EMNLP130.bib)
+Mirkin, Shachar, Nowson, Scott, Brun, Caroline, & Perez, Julien. (2015) *Motivating Personality-aware Machine Translation*. In the Proceedings of the Conference on Empirical Methods in Natural Language (EMNLP) 2015, Lisbon, Portugal. [PDF](http://aclweb.org/anthology/D/D15/D15-1130.pdf) [BIB](http://www.emnlp2015.org/proceedings/EMNLP/bib/EMNLP130.bib)
 
 ## Data 
 
@@ -55,6 +55,6 @@ This resulted with a corpus of 61 talks of which 32 are annotated as male and 29
 
 
 ## References:
-- Shachar Mirkin, Scott Nowson, Caroline Brun and Julien Perez. Motivating Personality-aware Machine Translation. In Proceedings of the Conference on Empirical Methods in Natural Language (EMNLP) 2015, Lisbon, Portugal. 
-- Ella Rabinovich, Raj Nath Patel, Shachar Mirkin, Lucia Specia and Shuly Wintner. Personalized Machine Translation: Preserving Original Author Traits. In Proceedings of the European Chapter of the Association for Computational Linguistics (EACL) 2017, Valencia, Spain.
-- Salah Ait-Mokhtar, Jean-Pierre Chanod, Claude Roux. A multi-input dependency parser. In Proceedings of the Seventh IWPT (International Workshop on Parsing Technologies) 2001, Beijing, China.
+- Shachar Mirkin, Scott Nowson, Caroline Brun and Julien Perez. *Motivating Personality-aware Machine Translation*. In Proceedings of the Conference on Empirical Methods in Natural Language (EMNLP) 2015, Lisbon, Portugal. 
+- Ella Rabinovich, Raj Nath Patel, Shachar Mirkin, Lucia Specia and Shuly Wintner. *Personalized Machine Translation: Preserving Original Author Traits*. In Proceedings of the European Chapter of the Association for Computational Linguistics (EACL) 2017, Valencia, Spain.
+- Salah Ait-Mokhtar, Jean-Pierre Chanod, Claude Roux. *A multi-input dependency parser*. In Proceedings of the Seventh IWPT (International Workshop on Parsing Technologies) 2001, Beijing, China.
