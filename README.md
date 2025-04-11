@@ -54,6 +54,10 @@ We have explored the option to use language identification for the purpose of de
 
 This resulted with a corpus of 61 talks of which 32 are annotated as male and 29 as female, and 27 were discarded. This is a much higher discard rate in comparison to the English videos, due to the different nature of the TED vs. TEDx events, and the data collection methods.
 
+## License
+
+Creative Commons BY-NC-ND (**CC BY-NC-ND**), inherited from [WIT](https://wit3.fbk.eu/)
+
 ## References
 
 - Shachar Mirkin, Scott Nowson, Caroline Brun and Julien Perez. [Motivating Personality-aware Machine Translation](http://aclweb.org/anthology/D/D15/D15-1130). In Proceedings of the Conference on Empirical Methods in Natural Language (EMNLP) 2015, Lisbon, Portugal.
