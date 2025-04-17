@@ -1,6 +1,6 @@
 # TED gender-annotated dataset
 
-This repository contains the gender-annotated dataset based on [TED](https://ted.com) which was used for gender classification of translated data in Mirkin et al., 2015 and Rabinovich et al., 2017.
+This repository contains the gender-annotated dataset based on [TED](https://ted.com) which was used for gender classification of translated data in Mirkin et al., 2015 and in Rabinovich et al., 2017.
 As the above papers link to a web page that is no longer available, the dataset is posted here, with consent. If you use this data please cite this paper:
 
 Mirkin, Shachar, Nowson, Scott, Brun, Caroline, & Perez, Julien. (2015) [Motivating Personality-aware Machine Translation](http://aclweb.org/anthology/D/D15/D15-1130). In the Proceedings of the Conference on Empirical Methods in Natural Language (EMNLP) 2015, Lisbon, Portugal
@@ -33,8 +33,7 @@ We (the first three authors of the paper) annotated the gender of each speaker w
 
 Any talk with multiple speakers or where the majority of the talk is not a speech, but rather a performance, was discarded ([example](https://web.archive.org/web/20170428020659/http://www.ted.com/talks/raul_midon_plays_everybody_and_peace_on_earth)). We explicitly checked any talk with less than 10 lines of text. This allows identifying songs, for instance, which were transcribed over a single line. Note that we discard songs, even if they include texts, since they may have not been written by the performers themselves and since they represent a different genre altogether. We also discard talks with multiple speakers of the same gender to make the dataset appropriate for future analysis.
 
-Out of the 1415 talks, 1012 (72%) were annotated as male, 344 (24%) as female and 59 were discarded.
-
+Out of the 1415 talks, 1012 (72%) were annotated as male, 344 (24%) as female, and 59 were discarded.
 
 ### French TEDx talks
 
@@ -45,7 +44,7 @@ We therefore turned to TEDx to obtain French to English data. TEDx are independe
 We used [Google YouTube Analytics API](https://developers.google.com/youtube/analytics) to search for videos of talks in French, and downloaded their manual French and English subtitles. We have extracted a list of [TEDx](https://www.ted.com/watch/tedx-talks) events in France and their dates via TEDx France (www.tedxenfrance.fr, accessed on 23/2/15). Each event-name and year was used as a query, e.g. "TEDx Paris 2011", "TEDx Paris 2011" or "TEDxSciencesPoReims 2015". That, in addition to the query "Tedx francais". Through this process we collected titles and IDs of potential TEDx talks in French.
 
 We downloaded the manual French subtitles of each of the talks and the English manual translation, if they existed, using the [getyoutubecc script](https://github.com/ihinojal/getyoutubecc).
-We used only videos that have both English and French **manual** subtitles (for some YouTube videos, automatic captions are also available), and converted the subtitles srt files, that include the segment number and time, into regular text files. 
+We used only videos that have both English and French **manual** subtitles (for some YouTube videos, automatic captions are also available), and converted the subtitles srt files, that include the segment number and time, into regular text files.
 We then post-processed the texts to remove any text in parentheses, as this typically included references to the audience like 'Applaudissements' or 'Applause' or transcriber clarifications such as 'CRI (Centre de recherches interdisciplinaires)'. The captions often split sentences in the middle. We therefore merged the captions into a single stream of text, and re-split them into sentences using the XIP parser (Ait-Mokhtar et al., 2001). This process yielded 88 potential talks with parallel texts. Note that this is a parallel corpus, but it is not sentence-aligned. However, since we did not use it to train an SMT model such alignment was not necessary.
 
 These files were annotated using the same process described above for en-fr, with the exception that now URLs did not include the name of the speaker and had to be always followed . We discarded talks by the same criteria as above, with the addition of discarding any talk not delivered in French.
@@ -63,3 +62,20 @@ Creative Commons BY-NC-ND (**CC BY-NC-ND**), inherited from [WIT](https://wit3.f
 - Shachar Mirkin, Scott Nowson, Caroline Brun and Julien Perez. [Motivating Personality-aware Machine Translation](http://aclweb.org/anthology/D/D15/D15-1130). In Proceedings of the Conference on Empirical Methods in Natural Language (EMNLP) 2015, Lisbon, Portugal.
 - Ella Rabinovich, Raj Nath Patel, Shachar Mirkin, Lucia Specia and Shuly Wintner. [Personalized Machine Translation: Preserving Original Author Traits](https://aclanthology.org/E17-1101/). In Proceedings of the European Chapter of the Association for Computational Linguistics (EACL) 2017, Valencia, Spain.
 - Salah Ait-Mokhtar, Jean-Pierre Chanod, Claude Roux. [A multi-input dependency parser](https://aclanthology.org/W01-1819/). In Proceedings of the Seventh International Workshop on Parsing Technologies 2001, Beijing, China.
+
+## Links update
+
+As of 18 April, 2025 , 2 of the original's data links in `xrce-emnlp15-gender-en.csv` are not found (404).
+We have modified the file with updated links to those TED talks found on YouTube. The original file is found under `orig`.
+
+```
+http://www.ted.com/talks/myshkin_ingawale_a_blood_test_without_bleeding
+  ->
+https://www.youtube.com/watch?v=RyeQt0GodsE
+```
+
+```
+https://www.ted.com/talks/two_young_scientists_break_down_plastics_with_bacteria
+  ->
+https://www.youtube.com/watch?v=geE5Bd9XQag
+```
